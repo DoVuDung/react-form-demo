@@ -1,10 +1,13 @@
 import React from 'react';
+// import styled from 'styled-components';
+import styles from './Button.module.css';
 
-import './Button.css';
+//import './Button.css';
 
+//const Button = styled.button``; //attack template literal
 const Button = props => {
   return (
-    <button type={props.type} className="button" onClick={props.onClick}>
+    <button type={props.type} className={styles.button} onClick={props.onClick}>
       {props.children}
     </button>
   );
